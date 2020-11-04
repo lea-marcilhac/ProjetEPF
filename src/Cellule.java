@@ -9,7 +9,7 @@
  * @author lmarcilh et nrichard
  */
 public class Cellule {//on initialise la classe
-    Jeton jetonCourant;//le jeton qui va interagir avec le trou noir ou le desintegrateur, donc le jeton qui va etre joué
+    Jeton jetonCourant;//le jeton qui va etre joué, soit il va etre mis dans une colonne, soit interagire avec le trou noir ou avec le desintegrateur
     boolean trouNoir;
     boolean desintegrateur;
     
@@ -33,7 +33,7 @@ public class Cellule {//on initialise la classe
    }
     //public Jeton recupererJeton(Jeton unJeton){
         public boolean supprimerJeton(){
-        if (jetonCourant!=null){// si on a un jeton sélectionné, on le supprime de jetonCourant
+        if (jetonCourant!=null){// si on a un jeton sélectionné, donc different de null, on le supprime de jetonCourant
             jetonCourant=null;
             return true;
             
